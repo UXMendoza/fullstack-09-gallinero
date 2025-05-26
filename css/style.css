@@ -12,7 +12,8 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'IM Fell Great Primer', serif;
+    font-style: normal;
     font-size: 7vw;
     color: #66433a;
 }
@@ -54,9 +55,10 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 50px;
+    padding: 20px;
+    width: 720px;
     align-items: center;
     text-align: justify;
-    padding: 20px;
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
     background-color: #ffe394;
@@ -68,9 +70,10 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 50px;
+    padding: 20px;
+    width: 720px;
     align-items: flex-start;
     text-align: justify;
-    padding: 20px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background-color: rgb(245 245 245);
@@ -111,41 +114,34 @@ h2 {
 }
 
 table {
-    text-align: center;
     border-collapse: collapse;
     margin: 20px;
 }
 
-.tabla_produccion{
+.tabla_produccion {
     display: flex;
-    align-self: center;
+    justify-content: center;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #2f2727;
 }
 
 table th {
     color: #f0eff5;
     background-color: #66433a;
-    border: 1px solid #2f2727;
-    padding: 5px;
 }
 
 .th_cabecera {
     color: #66433a;
     font-size: 20px;
     background-color: #f8dbc8;
-    padding: 5px;
 }
 
 table td {
-    padding: 5px;
-    border: 1px solid #2f2727;
     background-color: #ffffff;
-}
-
-.cabecera {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 textarea {
@@ -240,6 +236,12 @@ form {
     nav a {
         height: 40px;
     }
+
+    .card,
+    .card_baja {
+        padding: 20px;
+        width: 440px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -257,5 +259,11 @@ form {
 
     nav a {
         height: 30px;
+    }
+
+    .card,
+    .card_baja {
+        padding: 10px;
+        width: 380px;
     }
 }

@@ -1,34 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallinero del Abuelito | Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./img/chicken.png" type="image/x-icon">
-    <!-- Iconos Sharp -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-</head>
+<?php include('header.php'); ?>
 
 <body>
-<?php include('cabecera.php'); ?>
     <main>
         <div class="card contenedor">
             <div class="secciones">
                 <div class="seccion">
-                    <h2 class="cabecera">Mís Gallinas 🐔</h2>
+                    <h2>Mís Gallinas 🐔</h2>
                     <table>
                         <tr>
-                            <th>nombre</th>
-                            <th>fecha nacimiento</th>
-                            <th>raza</th>
+                            <th>Nombre</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Raza</th>
                         </tr>
                         <?php
                         include_once("includes/funciones.php");
@@ -50,7 +32,7 @@
         <div class="card contenedor">
             <div class="secciones">
                 <div class="seccion">
-                    <h2 class="cabecera">Estadisticas 📈</h2>
+                    <h2>Estadisticas 📈</h2>
                     <div style="display: flex;flex-wrap: wrap;justify-content: center;">
                         <div class="seccion">
                             <table>
@@ -58,8 +40,8 @@
                                     <th class="th_cabecera" colspan="3">Gallinas más productivas 🏆</th>
                                 </tr>
                                 <tr>
-                                    <th>nombre</th>
-                                    <th>cantidad</th>
+                                    <th>Nombre</th>
+                                    <th>Cantidad</th>
                                 </tr>
                                 <?php
                                 include_once("includes/funciones.php");
@@ -81,8 +63,8 @@
                                     <th class="th_cabecera" colspan="3">Dias más productivos 🏆</th>
                                 </tr>
                                 <tr>
-                                    <th>fecha</th>
-                                    <th>cantidad</th>
+                                    <th>Fecha</th>
+                                    <th>Cantidad</th>
                                 </tr>
                                 <?php
                                 include_once("includes/funciones.php");
@@ -105,9 +87,9 @@
                                 <th class="th_cabecera" colspan="3">Producción X gallina (última semana) 🥚</th>
                             </tr>
                             <tr>
-                                <th>nombre</th>
-                                <th>raza</th>
-                                <th>cantidad</th>
+                                <th>Nombre</th>
+                                <th>Raza</th>
+                                <th>Cantidad</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -130,8 +112,8 @@
                                 <th class="th_cabecera" colspan="3">Producción diaria (última semana) 🥚</th>
                             </tr>
                             <tr>
-                                <th>fecha</th>
-                                <th>huevos</th>
+                                <th>Fecha</th>
+                                <th>Huevos</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -153,8 +135,8 @@
                                 <th class="th_cabecera" colspan="3">Producción media último mes 🥚</th>
                             </tr>
                             <tr>
-                                <th>raza</th>
-                                <th>cantidad diaria</th>
+                                <th>Raza</th>
+                                <th>Cantidad diaria</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -176,8 +158,8 @@
                                 <th class="th_cabecera" colspan="3">Dias sin producir 🥚</th>
                             </tr>
                             <tr>
-                                <th>nombre</th>
-                                <th>cantidad</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -199,8 +181,8 @@
                                 <th class="th_cabecera" colspan="3">Gallinas Mos sobre la media 🐔</th>
                             </tr>
                             <tr>
-                                <th>nombre</th>
-                                <th>cantidad diaria</th>
+                                <th>Nombre</th>
+                                <th>Cantidad diaria</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -220,8 +202,8 @@
                                 <th class="th_cabecera" colspan="3">Promedio de huevos 🥚</th>
                             </tr>
                             <tr>
-                                <th>periodo</th>
-                                <th>cantidad</th>
+                                <th>Periodo</th>
+                                <th>Cantidad</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -241,8 +223,8 @@
                                 <th class="th_cabecera" colspan="3">Razas más productivas 🐔</th>
                             </tr>
                             <tr>
-                                <th>nombre</th>
-                                <th>cantidad</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -264,8 +246,8 @@
                                 <th class="th_cabecera" colspan="3">Máxima producción ⬆️</th>
                             </tr>
                             <tr>
-                                <th>mes</th>
-                                <th>huevos</th>
+                                <th>Mes</th>
+                                <th>Huevos</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -285,8 +267,8 @@
                                 <th class="th_cabecera" colspan="3">Mínima producción ⬇️</th>
                             </tr>
                             <tr>
-                                <th>mes</th>
-                                <th>huevos</th>
+                                <th>Mes</th>
+                                <th>Huevos</th>
                             </tr>
                             <?php
                             include_once("includes/funciones.php");
@@ -307,8 +289,8 @@
                             <th class="th_cabecera" colspan="3">Media X gallina 🐔</th>
                         </tr>
                         <tr>
-                            <th>nombre</th>
-                            <th>cantidad</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
                         </tr>
                         <?php
                         include_once("includes/funciones.php");
@@ -328,8 +310,8 @@
                             <th class="th_cabecera" colspan="3">Dia de la semana más productivo 🥚</th>
                         </tr>
                         <tr>
-                            <th>dia</th>
-                            <th>cantidad</th>
+                            <th>Dia</th>
+                            <th>Cantidad</th>
                         </tr>
                         <?php
                         include_once("includes/funciones.php");
@@ -344,20 +326,18 @@
                         }
                         ?>
                     </table>
-                    </div>
                 </div>
             </div>
         </div>
-            </div>
         <div class="card_baja contenedor">
             <div class="secciones">
                 <div class="seccion">
-                    <h2 class="cabecera">Bajas ✝</h2>
+                    <h2>Bajas ✝</h2>
                     <table class="table_baja">
                         <tr>
-                            <th>nombre</th>
-                            <th>fecha de obito</th>
-                            <th>causa</th>
+                            <th>Nombre</th>
+                            <th>Fecha de obito</th>
+                            <th>Causa</th>
                         </tr>
                         <?php
                         include_once("includes/funciones.php");
@@ -377,9 +357,7 @@
             </div>
         </div>
     </main>
-    <footer class="contenedor cabecera">
-        <p>Creado por Rafael Mendoza - 2024</p>
-    </footer>
+    <?php include("footer.php") ?>
 </body>
 
 </html>

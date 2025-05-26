@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallinero del Abuelito | Registrar producción</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./img/chicken.png" type="image/x-icon">
-    <!-- Iconos Sharp -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-</head>
+<?php include('header.php'); ?>
 
 <body>
-    <?php include('cabecera.php'); ?>
     <main>
         <div class="card contenedor">
             <table class="tabla_produccion" border="1">
@@ -72,9 +54,7 @@
         </div>
 
     </main>
-    <footer class="contenedor cabecera">
-        <p>Creado por Rafael Mendoza - 2024</p>
-    </footer>
+    <?php include("footer.php") ?>
 </body>
 
 </html>
