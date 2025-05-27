@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ffc487;
+    background-color: #fffbeb;
     font-family: monospace;
     font-size: large;
 }
@@ -14,17 +14,18 @@ h1 {
     text-align: center;
     font-family: 'IM Fell Great Primer', serif;
     font-style: normal;
-    font-size: 7vw;
-    color: #66433a;
+    font-size: 5vw;
+    padding: 10px 0px 30px;
+    color: #7a370d;
 }
 
 .logo {
     display: block;
     margin: auto;
-    width: 30%;
+    width: 20vw;
     padding: 10px;
     border: 3px solid rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.45);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25)
 }
@@ -47,7 +48,7 @@ h2 {
     text-align: justify;
     font-size: 26px;
     margin-bottom: 30px;
-    color: #66433a;
+    color: #7a370d;
 }
 
 .card {
@@ -55,13 +56,13 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 50px;
-    padding: 20px;
-    width: 720px;
+    padding: 30px;
+    width: fit-content;
+    min-width: 400px;
     align-items: center;
     text-align: justify;
-    border: 1px solid rgba(255, 255, 255, .25);
-    border-radius: 20px;
-    background-color: #ffe394;
+    border-radius: 0.5rem;
+    background-color: #fff5c6;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -70,8 +71,9 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 50px;
-    padding: 20px;
-    width: 720px;
+    padding: 30px;
+    width: fit-content;
+    min-width: 400px;
     align-items: flex-start;
     text-align: justify;
     border: 1px solid rgb(255, 255, 255);
@@ -91,6 +93,7 @@ h2 {
 .table_baja td {
     background-color: #e0e0e0;
 }
+
 
 .secciones {
     width: 100%;
@@ -123,21 +126,40 @@ table {
     justify-content: center;
 }
 
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    border: 2px solid #7a370d;
+    border-radius: 0.5rem;
+    background-color: #fffbeb;
+    color: #7a370d;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 table th,
 table td {
     padding: 10px;
-    border: 1px solid #2f2727;
+    border: 1px solid #cccccc;
 }
 
 table th {
     color: #f0eff5;
-    background-color: #66433a;
+    background-color: #7a370d;
 }
 
 .th_cabecera {
-    color: #66433a;
+    color: #7a370d;
     font-size: 20px;
-    background-color: #f8dbc8;
+    text-align: center;
+    background-color: #ffea88;
 }
 
 table td {
@@ -153,16 +175,27 @@ textarea {
 
 .boton {
     padding: 10px 20px;
-    background-color: #ac482a;
+    margin: 10px 0px 20px;
+    font-size: 16px;
+    /* max-width: 200px; */
+    background-color: #fdaa14;
     color: #ffffff;
-    border-radius: .4rem;
+    border-radius: 0.5rem;
     border: none;
     cursor: pointer;
 }
 
 .boton:hover {
-    background-color: #f1714a;
+    background-color: #ffc828;
     color: #ffffff;
+}
+
+.boton-danger {
+    background-color: #b7192c;
+}
+
+.boton-danger:hover {
+    background-color: #ec474f;
 }
 
 .fila {
@@ -182,22 +215,29 @@ nav a {
     text-decoration: none;
     text-align: center;
     width: 10rem;
-    height: 3rem;
-    background-color: #ac482a;
+    height: 2.5rem;
+    background-color: #fdaa14;
     color: #ffffff;
-    border-radius: .4rem;
+    border-radius: 0.5rem;
     align-content: center;
 }
 
 nav a:hover {
-    background-color: #f1714a;
+    background-color: #ffc828;
     color: #ffffff;
 }
 
-form {
+form,
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: left;
+}
+
+.formulario>div {
+    display: flex;
+    flex-direction: column;
 }
 
 .produccion {
@@ -237,10 +277,9 @@ form {
         height: 40px;
     }
 
-    .card,
-    .card_baja {
-        padding: 20px;
-        width: 440px;
+    h1 {
+        font-size: 7vw;
+        color: #7a370d;
     }
 }
 

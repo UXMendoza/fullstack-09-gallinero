@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/produccion.php");
+include_once("../includes/produccion.class.php");
 include_once("funciones.php");
 
 $fechaRecogida = $_POST['fecha_recogida'];

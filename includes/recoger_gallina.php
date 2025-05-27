@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/gallina.php");
+include_once("../includes/gallina.class.php");
 
 $nombre = $_POST['nombre'];
 $fechaNacimiento = $_POST['fecha_nacimiento'];

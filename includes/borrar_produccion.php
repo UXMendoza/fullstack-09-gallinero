@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/produccion.php");
+include_once("../includes/produccion.class.php");
 
 $fechaRecogida = $_POST['fecha_eliminar'];
 

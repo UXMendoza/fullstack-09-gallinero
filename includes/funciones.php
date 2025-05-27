@@ -4,7 +4,7 @@ function mostrarGallinas()
 {
     include("db_connection.php");
 
-    include_once("gallina.php");
+    include_once("gallina.class.php");
 
     $data = array();
 
@@ -37,7 +37,7 @@ function mostrarGallinasBorrar()
 {
     include("db_connection.php");
 
-    include_once("gallina.php");
+    include_once("gallina.class.php");
 
     $data = array();
 
@@ -72,7 +72,7 @@ function mostrarGallinasVivas()
 {
     include("db_connection.php");
 
-    include_once("gallina.php");
+    include_once("gallina.class.php");
 
     $data = array();
 
@@ -105,7 +105,7 @@ function mostrarProduccionSemana()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -132,7 +132,7 @@ function mostrarMediaRazaMes()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -159,7 +159,7 @@ function mostrarMediaSemanal()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -186,7 +186,7 @@ function mostrarDiasMasProductivos()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -213,7 +213,7 @@ function mostrarDiasSinProducir()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -240,7 +240,7 @@ function mostrarMosEncimaMedia()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -267,7 +267,7 @@ function mostrarEstadisticasHuevos()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -294,7 +294,7 @@ function mostrarProduccionRaza()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -321,7 +321,7 @@ function mostrarMesAlta()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -348,7 +348,7 @@ function mostrarMesBaja()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -375,7 +375,7 @@ function mostrarDaySemana()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -402,7 +402,7 @@ function mostrarPromedio()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 
@@ -429,7 +429,7 @@ function mostrarRazas()
 {
     include("db_connection.php");
 
-    include_once("raza.php");
+    include_once("raza.class.php");
 
     $data = array();
 
@@ -462,7 +462,7 @@ function mostrarRazasBorrar()
 {
     include("db_connection.php");
 
-    include_once("raza.php");
+    include_once("raza.class.php");
 
     $data = array();
 
@@ -477,7 +477,7 @@ function mostrarRazasBorrar()
         while ($fila) {
             $raza = new Raza();
             $raza->setNombre($fila['nombre']);
-            $raza->crearRaza($fila['nombre'], $fila['descripcion']);
+            // $raza->crearRaza($fila['nombre'], $fila['descripcion']);
 
             $data[] = $raza;
 
@@ -495,7 +495,7 @@ function mostrarBajas()
 {
     include("db_connection.php");
 
-    include_once("baja.php");
+    include_once("baja.class.php");
 
     $data = array();
 
@@ -528,7 +528,7 @@ function mostrarBajasBorrar()
 {
     include("db_connection.php");
 
-    include_once("baja.php");
+    include_once("baja.class.php");
 
     $data = array();
 
@@ -561,7 +561,7 @@ function mostrarGallinasMasProductivas()
 {
     include("db_connection.php");
 
-    include_once("produccion.php");
+    include_once("produccion.class.php");
 
     $data = array();
 

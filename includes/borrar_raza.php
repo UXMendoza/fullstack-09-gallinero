@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/raza.php");
+include_once("../includes/raza.class.php");
 
 $nombre = $_POST['nombre'];
 

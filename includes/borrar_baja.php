@@ -1,6 +1,6 @@
 <?php
 // Incluímos el archivo de pedido.php para poder usar la clase de pedido.
-include_once("../includes/baja.php");
+include_once("../includes/baja.class.php");
 
 // Guardamos en variables los valores que se escribieron en cada input del formulario
 $idGallina = $_POST['id_gallina'];

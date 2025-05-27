@@ -1,6 +1,6 @@
 <?php
 // Incluímos el archivo de cliente.php para poder usar la clase de cliente.
-include_once("../includes/raza.php");
+include_once("../includes/raza.class.php");
 
 // Guardamos en variables los valores que se escribieron en cada input del formulario
 $nombre = $_POST['nombre'];
