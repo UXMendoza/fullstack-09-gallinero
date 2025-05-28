@@ -23,7 +23,7 @@
             <div class="secciones">
                 <div class="seccion">
                     <h2>Mís Gallinas 🐔</h2>
-                    <table>
+                    <table cellspacing>
                         <tr>
                             <th>Nombre</th>
                             <th>Fecha de nacimiento</th>
@@ -50,7 +50,7 @@
             <div class="secciones">
                 <div class="seccion">
                     <h2>Estadisticas 📈</h2>
-                    <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+                    <div style="display: flex;flex-wrap: wrap;justify-content: center; gap: 10px;">
                         <div class="seccion">
                             <table>
                                 <tr>
